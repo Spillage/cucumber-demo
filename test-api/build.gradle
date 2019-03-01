@@ -1,0 +1,86 @@
+plugins {
+    id 'java'
+}
+
+group 'com.lutest'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+ext{
+    springBootVersion = "2.0.8.RELEASE"
+    springVersion = "5.0.12.RELEASE"
+    slf4jVersion = '1.7.5'
+    log4jVersion = '1.2.17'
+    jodaVersion = '2.2'
+}
+
+dependencies {
+
+    compile("org.springframework.boot:spring-boot-starter-jdbc:${springBootVersion}")
+    compile("org.springframework.boot:spring-boot-starter-aop:${springBootVersion}")
+    compile("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
+    compile("org.springframework.boot:spring-boot-starter-jetty:${springBootVersion}")
+    compile("org.springframework.boot:spring-boot-starter-data-redis:${springBootVersion}")
+    compile("org.springframework.boot:spring-boot-starter-actuator:${springBootVersion}")
+
+    compile "org.apache.activemq:activemq-client:5.12.3"
+
+    compile "org.slf4j:slf4j-api:1.7.25"
+    compile "org.slf4j:log4j-over-slf4j:1.7.25"
+    compile "org.apache.commons:commons-lang3:3.4"
+    compile "commons-io:commons-io:2.5"
+    compile "org.mybatis.spring.boot:mybatis-spring-boot-starter:1.1.1"
+    compile "org.apache.curator:curator-client:4.0.1"
+    compile "mysql:mysql-connector-java:8.0.13"
+    compile "redis.clients:jedis:2.9.0"
+    compile "javax.jms:javax.jms-api:2.0.1"
+    compile 'info.cukes:cucumber-java:1.2.5'
+    compile 'info.cukes:cucumber-junit:1.2.5'
+    compile 'junit:junit:4.12'
+
+    compile "com.google.guava:guava:21.0"
+    compile "com.squareup.okhttp:okhttp:2.3.0"
+
+    compile("com.alibaba:druid:1.0.11") {
+        exclude(module: 'slf4j-api')
+        exclude(module: 'slf4j-log4j12')
+    }
+    compile "com.github.pagehelper:pagehelper:4.1.3"
+
+    compile "org.springframework.boot:spring-boot-starter-test:${springBootVersion}"
+    compile group: 'org.hamcrest', name: 'hamcrest-all', version: '1.3'
+    compile group: 'info.cukes', name: 'cucumber-picocontainer', version: '1.1.5'
+    compile group: 'info.cukes', name: 'cucumber-junit', version: '1.2.5'
+    compile group: 'org.json', name: 'json', version: '20090211'
+    compile group: 'org.apache.httpcomponents',name:'httpcore',version:'4.0-alpha5'
+    compile group: 'org.apache.httpcomponents',name:'httpclient',version:'4.0.3'
+    compile 'info.cukes:cucumber-java:1.1.5'
+    compile 'info.cukes:cucumber-core:1.1.5'
+    compile 'com.google.guava:guava:15.0'
+    compile 'net.sourceforge.jexcelapi:jxl:2.6.12'
+    compile 'org.apache.commons:commons-lang3:3.0'
+    compile 'org.apache.commons:commons-io:1.3.2'
+    compile 'javax.mail:mail:1.4.7'
+    compile group: 'net.sf.json-lib', name: 'json-lib', version: '2.4', classifier: 'jdk15'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile 'org.hamcrest:hamcrest-core:1.3'
+    testCompile 'org.hamcrest:hamcrest-library:1.3'
+
+    runtime fileTree('../lib')
+
+
+    compile "log4j:log4j:$log4jVersion"
+    compile "org.slf4j:slf4j-api:$slf4jVersion"
+    compile "org.slf4j:slf4j-log4j12:$slf4jVersion"
+    compile "joda-time:joda-time:$jodaVersion"
+    compile 'javax.servlet:javax.servlet-api:3.0.1'
+
+    compile 'javax.servlet:jstl:1.2'
+    compile 'org.jyaml:jyaml:1.3'
+    compile 'com.alibaba:fastjson:1.2.56'
+}
