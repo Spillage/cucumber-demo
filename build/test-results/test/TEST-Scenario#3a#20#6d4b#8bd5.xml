@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: 测试" tests="6" skipped="5" failures="0" errors="0" timestamp="2019-03-02T01:00:25" hostname="duyalindeMacBook.local" time="0.04">
+  <properties/>
+  <testcase name="When 设置项目名称后缀为:这是一个测试项目" classname="Scenario: 测试" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="When 调用GET接口,url:&quot;http://baidu.com/&quot;" classname="Scenario: 测试" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="When 调用GET接口,url:&quot;https://tieba.baidu.com/&quot;" classname="Scenario: 测试" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="When 调用POST接口,url:&quot;http://www.example.com/&quot;,json:&quot;'code':200&quot;" classname="Scenario: 测试" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase name="Then 调用POST接口,url:&quot;http://www.example.com/&quot;,json:&quot;'code':200&quot;" classname="Scenario: 测试" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="classMethod" classname="Scenario: 测试" time="0.052"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

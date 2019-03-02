@@ -29,7 +29,6 @@ public class Steps {
      * @param url
      */
     @When("^调用GET接口,url:\"([^\"]*)\"$")
-    @Then("^调用GET接口,url:\"([^\"]*)\"$")
     public void getToUrl(String url) {
         LOGGER.fine("url: " + url);
         try {
@@ -48,7 +47,6 @@ public class Steps {
      * @param json
      */
     @When("^调用POST接口,url:\"([^\"]*)\",json:\"([^\"]*)\"$")
-    @Then("^调用POST接口,url:\"([^\"]*)\",json:\"([^\"]*)\"$")
     public void postToUrl(String url, JSONObject json) {
         LOGGER.fine("url: " + url);
         try {

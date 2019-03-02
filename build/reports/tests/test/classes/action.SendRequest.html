@@ -23,13 +23,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.003s</div>
+<div class="counter">-</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">-</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,74 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
+<a href="#tab1">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="initializationError"></a>
-<h3 class="failures">initializationError</h3>
-<span class="code">
-<pre>cucumber.runtime.DuplicateStepDefinitionException: Duplicate step definitions in action.Steps.getToUrl(String) in file:/Users/swift/xielu/lu_test/build/classes/java/test/ and action.Steps.getToUrl(String) in file:/Users/swift/xielu/lu_test/build/classes/java/test/
-	at cucumber.runtime.RuntimeGlue.addStepDefinition(RuntimeGlue.java:33)
-	at cucumber.runtime.java.JavaBackend.addStepDefinition(JavaBackend.java:151)
-	at cucumber.runtime.java.MethodScanner.scan(MethodScanner.java:68)
-	at cucumber.runtime.java.MethodScanner.scan(MethodScanner.java:41)
-	at cucumber.runtime.java.JavaBackend.loadGlue(JavaBackend.java:86)
-	at cucumber.runtime.Runtime.&lt;init&gt;(Runtime.java:92)
-	at cucumber.runtime.Runtime.&lt;init&gt;(Runtime.java:70)
-	at cucumber.runtime.Runtime.&lt;init&gt;(Runtime.java:66)
-	at cucumber.api.junit.Cucumber.createRuntime(Cucumber.java:80)
-	at cucumber.api.junit.Cucumber.&lt;init&gt;(Cucumber.java:59)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
-	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
-	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
-	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
-	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:26)
-	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
-	at org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:33)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:78)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
-	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:66)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:155)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:137)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -138,12 +77,36 @@
 <th>Result</th>
 </tr>
 </thead>
-<tr>
-<td class="failures">initializationError</td>
-<td class="failures">0.003s</td>
-<td class="failures">failed</td>
-</tr>
 </table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>@test
+Feature: 
+
+  Scenario: 测试                                                    ?[90m# test.feature:4?[0m
+    ?[33mWhen ?[0m?[33m设置项目名称后缀为:这是一个测试项目?[0m
+    ?[36mWhen ?[0m?[36m调用GET接口,url:&quot;?[0m?[36m?[1mhttp://baidu.com/?[0m?[36m&quot;?[0m                          ?[90m# Steps.getToUrl(String)?[0m
+    ?[36mWhen ?[0m?[36m调用GET接口,url:&quot;?[0m?[36m?[1mhttps://tieba.baidu.com/?[0m?[36m&quot;?[0m                   ?[90m# Steps.getToUrl(String)?[0m
+    ?[36mWhen ?[0m?[36m调用POST接口,url:&quot;?[0m?[36m?[1mhttp://www.example.com/?[0m?[36m&quot;,json:&quot;?[0m?[36m?[1m'code':200?[0m?[36m&quot;?[0m ?[90m# Steps.postToUrl(String,JSONObject)?[0m
+    ?[36mThen ?[0m?[36m调用POST接口,url:&quot;?[0m?[36m?[1mhttp://www.example.com/?[0m?[36m&quot;,json:&quot;?[0m?[36m?[1m'code':200?[0m?[36m&quot;?[0m ?[90m# Steps.postToUrl(String,JSONObject)?[0m
+
+1 Scenarios (?[33m1 undefined?[0m)
+5 Steps (?[36m4 skipped?[0m, ?[33m1 undefined?[0m)
+0m0.000s
+
+
+You can implement missing steps with the snippets below:
+
+@When(&quot;^设置项目名称后缀为:这是一个测试项目$&quot;)
+public void 设置项目名称后缀为_这是一个测试项目() throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+</pre>
+</span>
 </div>
 </div>
 <div id="footer">
@@ -153,7 +116,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.8</a> at Mar 1, 2019, 10:20:06 AM</p>
+<a href="http://www.gradle.org">Gradle 4.8</a> at Mar 2, 2019, 9:00:26 AM</p>
 </div>
 </div>
 </body>

@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 @RunWith(Cucumber.class)
 @CucumberOptions(format = {"pretty", "json:report/report.json"},
         tags = {"@test"},
-        features = { "src/test/resources/qa/test" }
+        features = { "src/test/resources/" }
 )
 
 public class SendRequest {

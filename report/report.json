@@ -1,0 +1,113 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "测试",
+        "description": "",
+        "id": ";测试",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "设置项目名称后缀为:这是一个测试项目",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "调用GET接口,url:\"http://baidu.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://baidu.com/",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.getToUrl(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "调用GET接口,url:\"https://tieba.baidu.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://tieba.baidu.com/",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps.getToUrl(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "调用POST接口,url:\"http://www.example.com/\",json:\"\u0027code\u0027:200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://www.example.com/",
+                  "offset": 14
+                },
+                {
+                  "val": "\u0027code\u0027:200",
+                  "offset": 45
+                }
+              ],
+              "location": "Steps.postToUrl(String,JSONObject)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "调用POST接口,url:\"http://www.example.com/\",json:\"\u0027code\u0027:200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://www.example.com/",
+                  "offset": 14
+                },
+                {
+                  "val": "\u0027code\u0027:200",
+                  "offset": 45
+                }
+              ],
+              "location": "Steps.postToUrl(String,JSONObject)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "test.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@test"
+      }
+    ]
+  }
+]
