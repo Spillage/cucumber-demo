@@ -1,6 +1,5 @@
 package action;
 
-import common.CommUtil;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import org.junit.BeforeClass;
